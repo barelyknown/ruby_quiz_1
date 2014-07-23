@@ -1,9 +1,11 @@
-class Suit
+module RubyQuiz1
+  class Suit
 
-  attr_reader :name, :value
+    attr_reader :name, :value
 
-  def initialize(name, value)
-    @name, @value = name, value
+    def initialize(name, value)
+      @name, @value = name, value
+    end
+
   end
-
 end
