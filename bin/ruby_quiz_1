@@ -1,0 +1,20 @@
+require "thor"
+
+require_relative "../lib/ruby_quiz_1"
+
+module RubyQuiz1
+  class SolitaireCLI < Thor
+
+    desc "encrypt MESSAGE", "encrypt a message"
+    def encrypt(message)
+      puts Message.new(message).encrypt
+    end
+
+    desc "decrypt MESSAGE", "decrypt a message"
+    def decrypt(message)
+      puts Message.new(message).decrypt
+    end
+
+  end
+  SolitaireCLI.start(ARGV)
+end
