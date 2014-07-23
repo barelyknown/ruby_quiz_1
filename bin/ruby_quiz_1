@@ -1,6 +1,6 @@
 require "thor"
 
-require_relative "../lib/ruby_quiz_1"
+require "ruby_quiz_1"
 
 module RubyQuiz1
   class SolitaireCLI < Thor
