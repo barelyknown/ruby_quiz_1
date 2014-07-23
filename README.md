@@ -1,29 +1,16 @@
-# RubyQuiz1
+# Ruby Quiz #1 Solution
 
-TODO: Write a gem description
+A solution to the [first ever Ruby quiz](http://rubyquiz.com/quiz1.html).
 
-## Installation
+The command line utility encrypts and decrypts messages using the [Solitaire Cipher](http://www.schneier.com/solitaire.html)
 
-Add this line to your application's Gemfile:
+```bash
+gem install 'ruby_quiz_1'
+```
 
-    gem 'ruby_quiz_1'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install ruby_quiz_1
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( http://github.com/<my-github-username>/ruby_quiz_1/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+```bash
+barelyknown$ ruby_quiz_1 encrypt 'Welcome to Ruby quiz'
+ABVAW LWZSY OORYK DUPVH
+barelyknown$ ruby_quiz_1 decrypt 'ABVAW LWZSY OORYK DUPVH'
+WELCO METOR UBYQU IZXXX
+```
